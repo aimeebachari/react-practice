@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { Component} from 'react';
+import PlaylistCollection from './PlaylistCollection';
 
-class App extends React.Component {
+class App extends Component {
   constructor(props) {
     super(props);
   }
@@ -19,10 +20,11 @@ class App extends React.Component {
     return (
       <div className="App row">
         <div className="column medium-6">
-          <h1>Playlist Portion<h1>
+          <h1>Playlist Portion</h1>
           <PlaylistCollection
-            playLists={data.playlists}
+            playlists={data.playlists}
           />
+        </div>
       </div>
     );
   }

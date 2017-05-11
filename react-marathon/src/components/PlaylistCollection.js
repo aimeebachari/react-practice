@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { Component } from 'react';
+import App from './App';
 
-class PlaylistCollection extends React.Component {
+class PlaylistCollection extends Component {
   constructor(props) {
     super(props);
   }
 
-  render(){
+  render() {
     let playlists=this.props.playlists.map((playlist) => {
       return (
         <Playlist
