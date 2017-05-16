@@ -1,5 +1,5 @@
 import React, { Component} from 'react';
-import PlaylistCollection from './PlaylistCollection';
+import PlaylistCollection from './PlaylistCollection.js';
 
 class App extends Component {
   constructor(props) {

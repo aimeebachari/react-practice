@@ -7,7 +7,7 @@ class PlaylistCollection extends Component {
   }
 
   render() {
-    let playlists=this.props.playlists.map((playlist) => {
+    let playlists = this.props.playlists.map((playlist) => {
       return (
         <Playlist
           key={playlist.id}

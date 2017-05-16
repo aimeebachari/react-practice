@@ -1,4 +1,4 @@
-import React { Component } from 'react';
+import React, { Component } from 'react';
 
 class Playlist extends Component {
   constructor(props) {
@@ -6,9 +6,10 @@ class Playlist extends Component {
   }
 
   render() {
-  return (
-    <li>{this.props.name}</li>
-  )}
+    return (
+      <li>{this.props.name}</li>
+    );
+  }
 }
 
 export default Playlist;
