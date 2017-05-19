@@ -9,7 +9,7 @@ const MealsList = props => {
         </strong>
         &nbsp;{meal.food}
       </li>
-    )
+    );
   });
 
   return (
@@ -18,6 +18,6 @@ const MealsList = props => {
       <ul>{mealItems}</ul>
     </div>
   );
-}
+};
 
 export default MealsList;

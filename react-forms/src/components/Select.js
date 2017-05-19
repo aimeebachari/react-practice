@@ -5,7 +5,7 @@ const Select = props => {
     return (
       <option key={option} value={option}>{option}</option>
     );
-  })
+  });
 
   return (
     <label>{props.label}
@@ -15,6 +15,6 @@ const Select = props => {
       </select>
     </label>
   );
-}
+};
 
 export default Select;
