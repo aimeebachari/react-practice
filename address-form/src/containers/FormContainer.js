@@ -1,8 +1,20 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import TextField from '../components/TextField';
 
 class FormContainer extends Component {
   constructor(props) {
-    super(props)
+    super(props);
+    this.state = {
+      errors: {},
+      firstName: '',
+      lastName: '',
+      address: '',
+      city: '',
+      state: '',
+      zipCode: '',
+      phoneNumber: '',
+      email: ''
+    };
   }
 
   render() {
@@ -49,8 +61,8 @@ class FormContainer extends Component {
 
         <input type="submit" className="button" value="Submit "/>
       </form>
-    )
+    );
   }
 }
 
-export default FormContainer
+export default FormContainer;
